@@ -9,6 +9,7 @@ export class AddEmployeeComponent implements OnInit {
   submit(form) {
     form.valid;
   }
+
   yearofexp = [
     { id: 1, years: 1 },
     { id: 2, years: 2 },
