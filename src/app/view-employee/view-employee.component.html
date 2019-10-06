@@ -1,0 +1,20 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">First-Name</th>
+            <th scope="col">Last-Name</th>
+            <th scope="col">Year-of-experience</th>
+            <th scope="col">Date-of-joining</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of product">
+            <th scope="row">{{item.eid}}</th>
+            <td>{{item.fname}}</td>
+            <td>{{item.lname}}</td>
+            <td>{{item.yoe}}</td>
+            <td>{{item.Doj}}</td>
+        </tr>
+    </tbody>
+</table>
