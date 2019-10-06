@@ -4,6 +4,7 @@ export interface Employee {
     lname: string;
     yoe: number;
     Doj: string;
+
 }
 export interface Project {
     pid: number;

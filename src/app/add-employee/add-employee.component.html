@@ -16,7 +16,7 @@
                 <input type="text" minlength="3" maxlength="10" ngModel name="lastname" class="form-control"
                     #lastname="ngModel" placeholder="Last name" required>
                 <div class="alert alert-danger" *ngIf="lastname.touched && !lastname.valid">
-                    <div *ngIf="lastname.errors.required">First name required</div>
+                    <div *ngIf="lastname.errors.required">Last name required</div>
                     <div *ngIf="lastname.errors.minlength"> Minimum
                         {{lastname.errors.minlength.requiredLength}}
                         characters</div>

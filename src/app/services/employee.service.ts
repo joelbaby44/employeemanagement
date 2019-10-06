@@ -83,6 +83,9 @@ export class EmployeeService {
   getAllProjects(): Project[] {
     return this.allProjects;
   }
+  addEmployee(employee: Employee) {
+    this.allEmployees.push(employee);
+  }
   // loginuser(credentials){
   //   return this.http.post( ,JSON.stringify(credentials));
   // }

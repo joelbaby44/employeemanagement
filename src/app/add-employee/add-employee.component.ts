@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Employee } from '../model/employee';
+import { EmployeeService } from '../services/employee.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-employee',
@@ -6,6 +9,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-employee.component.css']
 })
 export class AddEmployeeComponent implements OnInit {
+  firstname: string;
+  lastname: string;
+  yoe: number;
+  Doj: string;
+  employee: Employee;
+
   submit(form) {
     form.valid;
   }
@@ -17,8 +26,12 @@ export class AddEmployeeComponent implements OnInit {
     { id: 4, years: 4 },
     { id: 5, years: 5 }
   ];
-  constructor() { }
-
+  constructor(private employeeservice: EmployeeService, private router: Router) { }
+  // addEmployee(){
+  //   this.employee=new Employee(this.random(),this.firstname,this.lastname,this.yoe,this.Doj);
+  //   this.employeeservice.addEmployee(this.employee);
+  //   this.router.navigate(['/home']);
+  // }
   ngOnInit() {
   }
 
